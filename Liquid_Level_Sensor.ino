@@ -1,6 +1,6 @@
 /*
   Liquid Level Sensor
-  Copyright (c) 2016 Subhajit Das
+  Copyright (c) 2017 Subhajit Das
 
   Licence Disclaimer:
 
@@ -54,7 +54,7 @@ NewPing sonar(TRIGGER_PIN, ECHO_PIN, MAX_DISTANCE); // NewPing setup of pins and
    LCD VCC pin to 5V
    LCD VDD pin to Diode to GND
 */
-
+// for v1.x design
 #define RS 7
 #define E 6
 #define DB0 10
@@ -66,6 +66,7 @@ NewPing sonar(TRIGGER_PIN, ECHO_PIN, MAX_DISTANCE); // NewPing setup of pins and
 #define DB6 4
 #define DB7 3
 /*
+  // for v2.x design
   #define RS 10
   #define E 11
   #define DB0 8
