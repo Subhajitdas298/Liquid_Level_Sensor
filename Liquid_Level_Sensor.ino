@@ -54,30 +54,31 @@ NewPing sonar(TRIGGER_PIN, ECHO_PIN, MAX_DISTANCE); // NewPing setup of pins and
    LCD VCC pin to 5V
    LCD VDD pin to Diode to GND
 */
-// for v1.x design
-#define RS 7
-#define E 6
-#define DB0 10
-#define DB1 11
-#define DB2 A5
-#define DB3 A4
-#define DB4 5
-#define DB5 2
-#define DB6 4
-#define DB7 3
 /*
-  // for v2.x design
-  #define RS 10
-  #define E 11
-  #define DB0 8
-  #define DB1 7
-  #define DB2 6
-  #define DB3 5
-  #define DB4 4
-  #define DB5 3
-  #define DB6 A3
-  #define DB7 A4
+  // for v1.x design
+  #define RS 7
+  #define E 6
+  #define DB0 10
+  #define DB1 11
+  #define DB2 A5
+  #define DB3 A4
+  #define DB4 5
+  #define DB5 2
+  #define DB6 4
+  #define DB7 3
 */
+// for v2.x design
+#define RS 10
+#define E 11
+#define DB0 8
+#define DB1 7
+#define DB2 6
+#define DB3 5
+#define DB4 4
+#define DB5 3
+#define DB6 A3
+#define DB7 A4
+
 // initialize the library with the numbers of the interface pins
 LiquidCrystal lcd(RS, E, DB0, DB1, DB2, DB3, DB4, DB5, DB6, DB7);
 
